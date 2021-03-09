@@ -23,7 +23,7 @@ Your public key has been saved in /root/.ssh/id_rsa.pub.
 The key fingerprint is:
 SHA256:R8qZi1G2QuT59mORnaH+rmU+e5BgJnxidudEolP/a9o root@ip-172-31-95-0.ec2.internal
 The key's randomart image is:
-+---[RSA 2048]----+
++---[RSA 2048]----+<br>
 |      .          |
 |     o .  o .    |
 |      +.oo.+.    |
