@@ -12,5 +12,5 @@
 # Task to upload key
   tasks:
     - ec2_key:
-        name: mynewkey
+        name: mykey
         key_material: "{{ keyvalue }}"
