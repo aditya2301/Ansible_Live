@@ -36,10 +36,10 @@ The key's randomart image is:<br>
 +----[SHA256]-----+<br>
 
 
-#### Add AWS cloud Programatic Access credentials
+#### Add AWS Cloud Programatic Access Credentials
 aws configure
-AWS Access Key ID [None]: AKIAJFQBB3NT2BITL3FA
-AWS Secret Access Key [None]: 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
+AWS Access Key ID [None]: xxxxxxxxxxxxxxxxxxxx
+AWS Secret Access Key [None]: yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
 Default region name [None]: us-east-1
 Default output format [None]:
 
