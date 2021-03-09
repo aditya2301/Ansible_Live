@@ -1,0 +1,16 @@
+---
+- name: Play to upload key to AWS
+  hosts: Local
+  gather_facts: false
+  become: yes
+  connection: local
+
+# file to pick key
+  vars:
+    keyvalue: "{{ lookup('file', '/root/.ssh/id_rsa.pub') }}"
+
+# Task to upload key
+  tasks:
+    - ec2_key:
+        name: mynewkey
+        key_material: "{{ keyvalue }}"

@@ -1,0 +1,61 @@
+---
+- name: Play to Create SG and VM instance using it and Finally obtain created VM's Public IP Address information
+  hosts: Local
+  gather_facts: false
+  become: yes
+  connection: local
+
+  vars:
+    security_group: my_securitygroup
+    ec2_type: t2.micro
+    ami_id: ami-042e8287309f5df03
+    ec2_name: ubuntu-instance
+    keyname: mykey
+    tag_value: Ansible-Live
+
+  tasks:
+    - name: Creating new SG
+      ec2_group:
+        name: "{{ security_group }}"
+        description: SG with rule descriptions
+        rules:
+          - proto: tcp
+            from_port: 80
+            to_port: 80
+            cidr_ip: 0.0.0.0/0
+          - proto: tcp
+            from_port: 22
+            to_port: 22
+            cidr_ip: 0.0.0.0/0
+        tags:
+          Name: "{{ tag_value }}"
+      tags:
+       - SG_create
+
+    - name: Start required Instance
+      ec2_instance:
+        name: "{{ ec2_name }}"
+        key_name: "{{ keyname }}"
+        instance_type: "{{ ec2_type }}"
+        security_group: "{{ security_group }}"
+        network:
+          assign_public_ip: true
+        image_id: "{{ ami_id }}"
+        tags:
+          name: "{{ tag_value }}"
+      tags:
+       - VM_start
+
+    - name: Get Information from the "{{ ec2_name }}" started
+      ec2_instance_info:
+        filters:
+          "tag:name": "{{ tag_value }}"
+      register: VM_Content
+      tags:
+       - VM_info
+
+    - name: print all returned values
+      debug:
+        msg: "{{ VM_Content.instances[0].network_interfaces[0].association.public_ip }}"
+      tags:
+       - VM_info
