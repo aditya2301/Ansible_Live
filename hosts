@@ -1,5 +1,5 @@
 [Local]
 localhost
 
-#[VM]
-#ubuntu@204.236.214.97
+[VM]
+ubuntu@54.196.172.23
