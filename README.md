@@ -7,21 +7,21 @@ Remotely creating an ec2 instance on AWS cloud and host webpage with personalize
 <p>
 
 ### Requirements
-yum update -y
-sudo amazon-linux-extras install epel -y
-yum install -y $(cat yum_require.txt)
-pip install -r pip_require.txt
+yum update -y<br>
+sudo amazon-linux-extras install epel -y<br>
+yum install -y $(cat yum_require.txt)<br>
+pip install -r pip_require.txt<br>
 
 #### Generate key to be shared on Master Server
-ssh-keygen
-Generating public/private rsa key pair.
-Enter file in which to save the key (/root/.ssh/id_rsa):
-Enter passphrase (empty for no passphrase):
-Enter same passphrase again:
-Your identification has been saved in /root/.ssh/id_rsa.
-Your public key has been saved in /root/.ssh/id_rsa.pub.
-The key fingerprint is:
-SHA256:R8qZi1G2QuT59mORnaH+rmU+e5BgJnxidudEolP/a9o root@ip-172-31-95-0.ec2.internal
+ssh-keygen<br>
+Generating public/private rsa key pair.<br>
+Enter file in which to save the key (/root/.ssh/id_rsa):<br>
+Enter passphrase (empty for no passphrase):<br>
+Enter same passphrase again:<br>
+Your identification has been saved in /root/.ssh/id_rsa.<br>
+Your public key has been saved in /root/.ssh/id_rsa.pub.<br>
+The key fingerprint is:<br>
+SHA256:R8qZi1G2QuT59mORnaH+rmU+e5BgJnxidudEolP/a9o root@ip-172-31-95-0.ec2.internal<br>
 The key's randomart image is:<br>
 +---[RSA 2048]----+<br>
 |      .          |<br>
@@ -37,21 +37,21 @@ The key's randomart image is:<br>
 
 
 #### Add AWS Cloud Programatic Access Credentials
-aws configure
-AWS Access Key ID [None]: xxxxxxxxxxxxxxxxxxxx
-AWS Secret Access Key [None]: yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-Default region name [None]: us-east-1
-Default output format [None]:
+aws configure<br>
+AWS Access Key ID [None]: xxxxxxxxxxxxxxxxxxxx<br>
+AWS Secret Access Key [None]: yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy<br>
+Default region name [None]: us-east-1<br>
+Default output format [None]:<br>
 
 ##### In ansible.cfg uncomment the following parameter
 host_key_checking = False
 
 ##### Test working on the Ansible
-ansible localhost -m ping
-localhost | SUCCESS => {
-    "changed": false,
-    "ping": "pong"
-}
+ansible localhost -m ping<br>
+localhost | SUCCESS => {<br>
+    "changed": false,<br>
+    "ping": "pong"<br>
+}<br>
 
 </p>
 
