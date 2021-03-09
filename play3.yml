@@ -1,0 +1,31 @@
+---
+# After updating "hosts" inventory file with the ec2 IP information obtained after running "play2.yml", Run this playbook. 
+- name: Play to create /var/www/html on newly created ec2, Copy Custom index.html remotely, Install nginx service and start it
+  hosts: VM
+  gather_facts: false
+  become: yes
+  connection: ssh
+  tasks:
+    - name: Creates directory
+      file:
+        path: /var/www/html
+        state: directory
+        
+    - name: Copy file to ubuntu VM
+      copy:
+        src: index.html
+        dest: /var/www/html/index.html
+        owner: root
+        group: root
+        mode: '0777'
+        
+    - name: Install nginx
+      package:
+        name:
+          - nginx
+        state: present
+      notify: Restart the service
+      
+  handlers:
+      - name: Restart the service
+        action: service name=nginx state=restarted
