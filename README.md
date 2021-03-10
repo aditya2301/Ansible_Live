@@ -74,7 +74,7 @@ localhost | SUCCESS => {
 
 ### Working
 ##### Step 1: Run **play1.yml** to add copy public key created to AWS
-<a href="https://github.com/aditya2301/Ansible_Live/images/"><img src="ansible1.PNG"></a>
+<a href="https://github.com/aditya2301/Ansible_Live/tree/main/"><img src="images/ansible1.PNG"></a>
 
 ##### Step 2: Run **play2.yml** to create a security group and an ec2 instance using it and get Public Ipv4 address from the instance to connect to remotely
 
