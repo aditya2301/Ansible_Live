@@ -27,15 +27,15 @@ The key fingerprint is:<br>
 SHA256:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz root@ip-172-31-95-0.ec2.internal<br>
 The key's randomart image is:<br>
 
-+---[RSA 2048]----+<br>
-|      .          |<br>
-|     o .  o .    |<br>
-|      +.oo.+.    |<br>
-|     . =O**++o   |<br>
-|      ooSO==oo   |<br>
-|       = = .+ .  |<br>
-|      . . = o. . |<br>
-|         . *..+  |<br>
++---[RSA 2048]----+
+|      .          |
+|     o .  o .    |
+|      +.oo.+.    |
+|     . =O**++o   |
+|      ooSO==oo   |
+|       = = .+ .  |
+|      . . = o. . |
+|         . *..+  |
 |          .o**E  |
 +----[SHA256]-----+
 </pre>
