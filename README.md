@@ -13,7 +13,8 @@ Remotely creating an ec2 instance on AWS cloud and host webpage with personalize
 - yum install -y $(cat yum_require.txt)
 - pip install -r pip_require.txt
 ```
-
+</p>
+<pre>
 #### Generate key to be shared on Master Server
 ssh-keygen<br>
 Generating public/private rsa key pair.<br>
@@ -25,8 +26,7 @@ Your public key has been saved in /root/.ssh/id_rsa.pub.<br>
 The key fingerprint is:<br>
 SHA256:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz root@ip-172-31-95-0.ec2.internal<br>
 The key's randomart image is:<br>
-</p>
-<pre>
+
 +---[RSA 2048]----+<br>
 |      .          |<br>
 |     o .  o .    |<br>
@@ -36,8 +36,8 @@ The key's randomart image is:<br>
 |       = = .+ .  |<br>
 |      . . = o. . |<br>
 |         . *..+  |<br>
-|          .o**E  |<br>
-+----[SHA256]-----+<br>
+|          .o**E  |
++----[SHA256]-----+
 </pre>
 <p>
 #### Add AWS Cloud Programatic Access Credentials
