@@ -15,10 +15,11 @@ Remotely creating an ec2 instance on AWS cloud and host webpage with personalize
 ```
 ### Setup
 ##### Step 1: Generate key to be shared on Master Server
-<pre>
+
 ```
 ssh-keygen
 ```
+<pre>
 Generating public/private rsa key pair.
 Enter file in which to save the key (/root/.ssh/id_rsa):
 Enter passphrase (empty for no passphrase):
@@ -43,10 +44,11 @@ The key's randomart image is:
 </pre>
 
 ##### Step 2: Add AWS Cloud Programatic Access Credentials in place of xxxxx and yyyyy and enter region to work. (Here default North Virgina is chosen)
-<pre>
+
 ```
 aws configure
 ```
+<pre>
 AWS Access Key ID [None]: xxxxxxxxxxxxxxxxxxxx
 AWS Secret Access Key [None]: yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
 Default region name [None]: us-east-1
@@ -59,10 +61,11 @@ host_key_checking = False
 </pre>
 
 ##### Step 4: Test working on the Ansible
-<pre>
+
 ```
 ansible localhost -m ping
 ```
+<pre>
 localhost | SUCCESS => {
     "changed": false,
     "ping": "pong"
