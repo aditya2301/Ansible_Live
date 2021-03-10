@@ -72,6 +72,18 @@ localhost | SUCCESS => {
 }
 </pre>
 
+### Working
+##### Step 1: Run **play1.yml** to add copy public key created to AWS
+<a href="https://github.com/boudhayan-dev/Automatic-Waste-Segregator/tree/v.01"><img src="images/v1.0.jpeg" height="200px" width="160px"></a>
+##### Step 2: Run **play2.yml** to create a security group and an ec2 instance using it and get Public Ipv4 address from the instance to connect to remotely
+
+##### Step 3: Update inventory file **hosts** with <username>@<IP of VM> under [VM]
+
+##### Step 4: Run **play3.yml** to create /var/www/html directory on the created VM and copy index.html to the VM -> Install nginx service and restart service
+
+##### Step 5: Open browser and check content by running <IP of VM>:<port 80(optional)>
+
+
 
 <br>
 
