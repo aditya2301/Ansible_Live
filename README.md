@@ -76,7 +76,7 @@ localhost | SUCCESS => {
 ##### Step 1: Run **play1.yml** to add copy public key created to AWS
 <table align="center">
 	<tr>
-		<td width="400px">&emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/boudhayan-dev/Automatic-Waste-Segregator/tree/v.01"><img src="images/v1.0.jpeg" height="200px" width="160px"></a></td>
+		<td width="400px">&emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/aditya2301/Ansible_Live/images/"><img src="ansible1.PNG" height="200px" width="160px"></a></td>
 		<td width="600px">
 			&emsp;&emsp;<a href="https://github.com/boudhayan-dev/Automatic-Waste-Segregator/tree/v.01">Version 0.1</a><br><br>
 			<ul>
