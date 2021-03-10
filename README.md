@@ -17,7 +17,7 @@ Remotely creating an ec2 instance on AWS cloud and host webpage with personalize
 ##### Step 1: Generate key to be shared on Master Server
 
 ```
-\# ssh-keygen
+# ssh-keygen
 ```
 <pre>
 Generating public/private rsa key pair.
