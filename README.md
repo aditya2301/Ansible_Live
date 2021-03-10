@@ -4,7 +4,6 @@
 
 Remotely creating an ec2 instance on AWS cloud and host webpage with personalized content
 
-<p>
 
 ### Requirements
 ```
@@ -13,19 +12,19 @@ Remotely creating an ec2 instance on AWS cloud and host webpage with personalize
 - yum install -y $(cat yum_require.txt)
 - pip install -r pip_require.txt
 ```
-</p>
+
 <pre>
 #### Generate key to be shared on Master Server
-ssh-keygen<br>
-Generating public/private rsa key pair.<br>
-Enter file in which to save the key (/root/.ssh/id_rsa):<br>
-Enter passphrase (empty for no passphrase):<br>
-Enter same passphrase again:<br>
-Your identification has been saved in /root/.ssh/id_rsa.<br>
-Your public key has been saved in /root/.ssh/id_rsa.pub.<br>
-The key fingerprint is:<br>
-SHA256:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz root@ip-172-31-95-0.ec2.internal<br>
-The key's randomart image is:<br>
+ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /root/.ssh/id_rsa.
+Your public key has been saved in /root/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz root@ip-172-31-95-0.ec2.internal
+The key's randomart image is:
 
 +---[RSA 2048]----+
 |      .          |
@@ -38,8 +37,7 @@ The key's randomart image is:<br>
 |         . *..+  |
 |          .o**E  |
 +----[SHA256]-----+
-</pre>
-<p>
+
 #### Add AWS Cloud Programatic Access Credentials
 aws configure<br>
 AWS Access Key ID [None]: xxxxxxxxxxxxxxxxxxxx<br>
@@ -51,13 +49,12 @@ Default output format [None]:<br>
 host_key_checking = False
 
 ##### Test working on the Ansible
-ansible localhost -m ping<br>
-localhost | SUCCESS => {<br>
-    "changed": false,<br>
-    "ping": "pong"<br>
-}<br>
-
-</p>
+ansible localhost -m ping
+localhost | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+</pre>
 
 
 <br>
