@@ -74,7 +74,18 @@ localhost | SUCCESS => {
 
 ### Working
 ##### Step 1: Run **play1.yml** to add copy public key created to AWS
-<td width="400px">&emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/boudhayan-dev/Automatic-Waste-Segregator/tree/v.01"><img src="images/v1.0.jpeg" height="200px" width="160px"></a></td>
+<table align="center">
+	<tr>
+		<td width="400px">&emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/boudhayan-dev/Automatic-Waste-Segregator/tree/v.01"><img src="images/v1.0.jpeg" height="200px" width="160px"></a></td>
+		<td width="600px">
+			&emsp;&emsp;<a href="https://github.com/boudhayan-dev/Automatic-Waste-Segregator/tree/v.01">Version 0.1</a><br><br>
+			<ul>
+				<img src="images/checked.png"> Segreagtes waste into 2 categories.<br>
+				<img src="images/checked.png"> Provides Live monitoring via Web Application.<br>
+				<img src="images/checked.png"> User Notification via SMS.
+			</ul>
+		</td>
+	</tr>
 ##### Step 2: Run **play2.yml** to create a security group and an ec2 instance using it and get Public Ipv4 address from the instance to connect to remotely
 
 ##### Step 3: Update inventory file **hosts** with <username>@<IP of VM> under [VM]
