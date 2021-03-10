@@ -6,16 +6,19 @@ Remotely creating an ec2 instance on AWS cloud and host webpage with personalize
 
 
 ### Requirements
+##### To run on Ansible Master server
 ```
 - yum update -y
 - sudo amazon-linux-extras install epel -y
 - yum install -y $(cat yum_require.txt)
 - pip install -r pip_require.txt
 ```
-
+### Setup
+##### Step 1: Generate key to be shared on Master Server
 <pre>
-#### Generate key to be shared on Master Server
+```
 ssh-keygen
+```
 Generating public/private rsa key pair.
 Enter file in which to save the key (/root/.ssh/id_rsa):
 Enter passphrase (empty for no passphrase):
@@ -37,19 +40,29 @@ The key's randomart image is:
 |         . *..+  |
 |          .o**E  |
 +----[SHA256]-----+
+</pre>
 
-#### Add AWS Cloud Programatic Access Credentials
-aws configure<br>
-AWS Access Key ID [None]: xxxxxxxxxxxxxxxxxxxx<br>
-AWS Secret Access Key [None]: yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy<br>
-Default region name [None]: us-east-1<br>
-Default output format [None]:<br>
+##### Step 2: Add AWS Cloud Programatic Access Credentials in place of xxxxx and yyyyy and enter region to work. (Here default North Virgina is chosen)
+<pre>
+```
+aws configure
+```
+AWS Access Key ID [None]: xxxxxxxxxxxxxxxxxxxx
+AWS Secret Access Key [None]: yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+Default region name [None]: us-east-1
+Default output format [None]:
+</pre>
 
-##### In ansible.cfg uncomment the following parameter
+##### Step 3: In ansible.cfg uncomment the following parameter for disable ssh connectivity prompt
+<pre>
 host_key_checking = False
+</pre>
 
-##### Test working on the Ansible
+##### Step 4: Test working on the Ansible
+<pre>
+```
 ansible localhost -m ping
+```
 localhost | SUCCESS => {
     "changed": false,
     "ping": "pong"
