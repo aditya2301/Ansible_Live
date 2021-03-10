@@ -77,12 +77,16 @@ localhost | SUCCESS => {
 <a href="https://github.com/aditya2301/Ansible_Live/tree/main/"><img src="images/ansible1.PNG"></a>
 
 ##### Step 2: Run **play2.yml** to create a security group and an ec2 instance using it and get Public Ipv4 address from the instance to connect to remotely
+<a href="https://github.com/aditya2301/Ansible_Live/tree/main/"><img src="images/ansible2.PNG"></a>
+<a href="https://github.com/aditya2301/Ansible_Live/tree/main/"><img src="images/ansible5.PNG"></a>
 
-##### Step 3: Update inventory file **hosts** with <username>@<IP of VM> under [VM]
+##### Step 3: Update inventory file **hosts** with \<username\>@\<IP of VM\> obtained in Step 2 under [VM]
 
 ##### Step 4: Run **play3.yml** to create /var/www/html directory on the created VM and copy index.html to the VM -> Install nginx service and restart service
+<a href="https://github.com/aditya2301/Ansible_Live/tree/main/"><img src="images/ansible3.PNG"></a>
 
-##### Step 5: Open browser and check content by running <IP of VM>:<port 80(optional)>
+##### Step 5: Open browser and check content by running \<IP of VM\>:\<port 80(optional) \>
+<a href="https://github.com/aditya2301/Ansible_Live/tree/main/"><img src="images/ansible4.PNG"></a>
 
 
 
