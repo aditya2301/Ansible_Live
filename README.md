@@ -8,13 +8,13 @@ Remotely creating an ec2 instance on AWS cloud and host webpage with personalize
 ### Requirements
 ##### To run on Ansible Master server
 ```
-- yum update -y
-- sudo amazon-linux-extras install epel -y
-- yum install -y $(cat yum_require.txt)
-- pip install -r pip_require.txt
+- # yum update -y
+- # sudo amazon-linux-extras install epel -y
+- # yum install -y $(cat yum_require.txt)
+- # pip install -r pip_require.txt
 ```
 ### Setup
-##### Step 1: Generate key to be shared on Master Server
+##### Step 1: Generate key to be shared on Master Server and follow prompts
 
 ```
 # ssh-keygen
@@ -46,7 +46,7 @@ The key's randomart image is:
 ##### Step 2: Add AWS Cloud Programatic Access Credentials in place of xxxxx and yyyyy and enter region to work. (Here default North Virgina is chosen)
 
 ```
-aws configure
+# aws configure
 ```
 <pre>
 AWS Access Key ID [None]: xxxxxxxxxxxxxxxxxxxx
@@ -63,7 +63,7 @@ host_key_checking = False
 ##### Step 4: Test working on the Ansible
 
 ```
-ansible localhost -m ping
+# ansible localhost -m ping
 ```
 <pre>
 localhost | SUCCESS => {
