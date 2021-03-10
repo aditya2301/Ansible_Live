@@ -8,9 +8,9 @@ Remotely creating an ec2 instance on AWS cloud and host webpage with personalize
 ### Requirements
 ##### To run on Ansible Master server
 - \# yum update -y
-- # sudo amazon-linux-extras install epel -y
-- # yum install -y $(cat yum_require.txt)
-- # pip install -r pip_require.txt
+- \# sudo amazon-linux-extras install epel -y
+- \# yum install -y $(cat yum_require.txt)
+- \# pip install -r pip_require.txt
 
 
 ### Setup
