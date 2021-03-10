@@ -25,6 +25,7 @@ Your public key has been saved in /root/.ssh/id_rsa.pub.<br>
 The key fingerprint is:<br>
 SHA256:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz root@ip-172-31-95-0.ec2.internal<br>
 The key's randomart image is:<br>
+</p>
 +---[RSA 2048]----+<br>
 |      .          |<br>
 |     o .  o .    |<br>
@@ -37,7 +38,7 @@ The key's randomart image is:<br>
 |          .o**E  |<br>
 +----[SHA256]-----+<br>
 
-
+<p>
 #### Add AWS Cloud Programatic Access Credentials
 aws configure<br>
 AWS Access Key ID [None]: xxxxxxxxxxxxxxxxxxxx<br>
