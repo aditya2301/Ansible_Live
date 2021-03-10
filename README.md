@@ -78,6 +78,8 @@ localhost | SUCCESS => {
 
 ##### Step 2: Run **play2.yml** to create a security group and an ec2 instance using it and get Public Ipv4 address from the instance to connect to remotely
 <a href="https://github.com/aditya2301/Ansible_Live/tree/main/"><img src="images/ansible2.PNG"></a>
+<br>
+<br>
 <a href="https://github.com/aditya2301/Ansible_Live/tree/main/"><img src="images/ansible5.PNG"></a>
 
 ##### Step 3: Update inventory file **hosts** with \<username\>@\<IP of VM\> obtained in Step 2 under [VM]
