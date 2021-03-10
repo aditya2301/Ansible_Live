@@ -26,6 +26,7 @@ The key fingerprint is:<br>
 SHA256:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz root@ip-172-31-95-0.ec2.internal<br>
 The key's randomart image is:<br>
 </p>
+<pre>
 +---[RSA 2048]----+<br>
 |      .          |<br>
 |     o .  o .    |<br>
@@ -37,7 +38,7 @@ The key's randomart image is:<br>
 |         . *..+  |<br>
 |          .o**E  |<br>
 +----[SHA256]-----+<br>
-
+</pre>
 <p>
 #### Add AWS Cloud Programatic Access Credentials
 aws configure<br>
