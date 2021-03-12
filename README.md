@@ -93,6 +93,10 @@ localhost | SUCCESS => {
 
 
 <br>
+### Author
+##### Aditya Agarwal
+- Linkedin: https://www.linkedin.com/in/aditya-ag-2301/
+- Github: https://github.com/aditya2301
 
 
 ###### © All rights reserved.
