@@ -90,7 +90,6 @@ localhost | SUCCESS => {
 ##### Step 5: Open browser and check content by running \<IP of VM\>:\<port 80(optional) \>
 <a href="https://github.com/aditya2301/Ansible_Live/tree/main/"><img src="images/ansible4.PNG"></a>
 
-
 <br>
 
 ### Author
