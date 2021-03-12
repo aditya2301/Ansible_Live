@@ -1,5 +1,5 @@
 # Ansible_Live
-<a href="mailto:aditya_ag2301@yahoo.in"> ![Ask Me Anything](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg?longCache=true&style=plastic)</a>  ![PyPI - Status](https://img.shields.io/pypi/status/Django.svg?style=plastic)&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/boudhayan-dev/Automatic-Waste-Segregator/tree/v.01"><img src="https://img.shields.io/badge/Version-0.1-brightgreen.svg?longCache=true&style=for-the-badge"></a>
+<a href="mailto:aditya_ag2301@yahoo.in"> ![Ask Me Anything](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg?longCache=true&style=plastic)</a>   ![PyPI - Status](https://img.shields.io/pypi/status/Django.svg?style=plastic)&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/boudhayan-dev/Automatic-Waste-Segregator/tree/v.01"><img src="https://img.shields.io/badge/Version-0.1-brightgreen.svg?longCache=true&style=for-the-badge"></a>
 <br>
 
 Remotely creating an ec2 instance on AWS cloud and host webpage with personalized content
@@ -91,12 +91,13 @@ localhost | SUCCESS => {
 <a href="https://github.com/aditya2301/Ansible_Live/tree/main/"><img src="images/ansible4.PNG"></a>
 
 
+<br>
+
+### Author
+#### Aditya Agarwal
+- LinkedIn: https://www.linkedin.com/in/aditya-ag-2301/ 
+- Github: https://github.com/aditya2301/
 
 <br>
-### Author
-##### Aditya Agarwal
-- Linkedin: https://www.linkedin.com/in/aditya-ag-2301/
-- Github: https://github.com/aditya2301
-
 
 ###### © All rights reserved.
